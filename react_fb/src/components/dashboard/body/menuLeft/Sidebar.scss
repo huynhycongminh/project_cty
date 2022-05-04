@@ -1,0 +1,58 @@
+@import "/src/components/dashboard/Responese/minxing.scss";
+
+.sidebar {
+    padding: 25px 10px;
+    float: left;
+    @include respond-to(md) {
+        visibility: hidden;
+    }
+
+    @include respond-to(sm) {
+        visibility: hidden;
+    }
+
+    @include respond-to(xs) {
+        visibility: hidden;
+    }
+
+    .sidebar_top {
+        border-bottom: 1px solid rgba(128, 128, 128, 0.062);
+    }
+
+    .sidebar_middle {
+        align-items: center;
+
+        .title_middle {
+            color: rgba(125, 124, 124, 0.637);
+        }
+
+    }
+
+    .see_more {
+        align-items: center;
+        display: flex;
+        text-decoration: none;
+        background-color: rgba(167, 165, 165, 0.142);
+        height: 40px;
+        border-radius: 5%;
+        width: 250px;
+
+        .more {
+            margin-left: 100px;
+            color: rgba(0, 0, 0, 0.61);
+
+            @include respond-to(lg) {
+                margin-left: 70px;
+            }
+
+
+        }
+    }
+
+    .sidebar_bottom {
+        .title_bottom {
+            color: rgba(125, 124, 124, 0.637);
+
+        }
+    }
+}

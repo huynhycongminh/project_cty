@@ -1,0 +1,50 @@
+// Extra small screen / phone
+$screen-xs: 480px;
+
+// Small screen / tablet
+$screen-sm: 768px;
+
+// Medium screen / desktop
+$screen-md: 992px;
+
+// Large screen / wide desktop
+$screen-lg: 1200px;
+
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max: ($screen-sm );
+$screen-sm-max: ($screen-md );
+$screen-md-max: ($screen-lg );
+
+// respond-to()
+// ------------
+@mixin respond-to($media) {
+	@if $media==xs {
+		@media (max-width: $screen-xs-max) {
+			@content
+		}
+	}
+
+	@else if $media==sm {
+		@media (min-width: $screen-sm) and (max-width: $screen-sm-max) {
+			@content
+		}
+	}
+	@else if $media==lg {
+		@media (min-width: $screen-lg)  {
+			@content
+		}
+	}
+	@else if $media==laptop {
+		@media (min-width: 992px) and (max-width: 1200px) {
+			@content
+		}
+	}
+	@else if $media == laptop_medium {
+		@media (min-width: 768px) and (max-width: 992px) {
+			@content
+		}
+	}
+	
+	 
+}

@@ -1,0 +1,12 @@
+@import "/src/components/dashboard/Responese/minxing.scss";
+.storyList{
+    display: flex;
+    @include respond-to(md){
+        width: 600px;
+    }
+    @include respond-to(sm){
+        width: 700px;
+        margin-left: 60px;
+    }
+  
+}

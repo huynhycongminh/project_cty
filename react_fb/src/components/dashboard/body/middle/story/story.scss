@@ -1,0 +1,40 @@
+@import "/src/components/dashboard/Responese/minxing.scss";
+.story{
+    box-sizing: border-box;
+    position: relative;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 200px;
+    box-shadow: 0px 5px 17px -7px rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+    margin-right: 10px;
+    transition: transform 100,x ease-in;
+    cursor: pointer;
+    display: flex;
+    margin-left: 10px;
+
+    @include respond-to(lg){
+        width: 100px;
+        height: 190px;
+    }
+    @include respond-to(xs){
+        width: 90px;
+        height: 150px;
+    }
+  
+    .avatar_story{
+        margin: 10px;
+        border: 5px solid #2e81f4;
+    }
+    .title_story{
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        color: white;
+    }
+}
+.story:hover{
+    transform: scale(1.07);
+}

@@ -1,0 +1,152 @@
+@import "../Responese/minxing.scss";
+
+.headers {
+    padding: 5px 20px;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    background-color: white;
+    z-index: 100;
+    top: 0;
+    box-shadow: 0px 3px 8px -9px rgba(0, 0, 0, 0.75);
+    
+    .header_left {
+        display: flex;
+        justify-content: space-evenly;
+        float: left;
+        .logo {
+            height: 40px;
+            margin-top: 5px;
+            
+        }
+
+        .search {
+            display: flex;
+            align-items: center;
+            background: color #eff2f5;
+            padding: 10px;
+            margin-left: 10px;
+            border-radius: 999px;
+           
+
+
+            .search_input {
+                font-size: 16px;
+                border: none;
+                background-color: transparent;
+                outline-width: 0;
+                @include respond-to(xs){
+                    visibility: hidden;
+                }
+            }
+        }
+    }
+
+    .header_right{
+        float :right;
+        display: flex;
+        @include respond-to(xs){
+            margin-left: -250px;
+        }
+        
+        .header_info {
+            display: flex;
+            align-items: center;
+            margin-right: 15px;
+            @include respond-to(md){
+                visibility: hidden;
+            }
+            @include respond-to(lg){
+                // visibility: hidden;
+            }
+            @include respond-to(sm){
+                visibility: hidden;
+            }
+            @include respond-to(xs){
+                visibility: hidden;
+            }
+    
+            h4 {
+                display: flex;
+                margin-left: 5px;
+                margin-bottom: -1px;
+               
+            }
+        }
+    
+        .link_homePage {
+            margin-right: 15px;
+            align-items: center;
+            display: flex;
+           
+    
+            .homePage {
+                text-decoration: none;
+                color: #2e81f4;
+                font-weight: 600;
+                // @include respond-to(lg){
+                //     visibility: hidden;
+                // }
+            }
+            @include respond-to(md){
+                visibility: hidden;
+            }
+            @include respond-to(sm){
+                visibility: hidden;
+            }
+            @include respond-to(xs){
+                visibility: hidden;
+            }
+        }
+    
+        .createNew {
+            margin-right: -35px;
+            align-items: center;
+            display: flex;
+            text-decoration: none;
+    
+            .create {
+                text-decoration: none;
+                color: black;
+                font-weight: bold;
+            }
+            // @include respond-to(lg){
+            //     visibility: hidden;
+            // }
+            @include respond-to(md){
+                visibility: hidden;
+            }
+            @include respond-to(sm){
+                visibility: hidden;
+            }
+            @include respond-to(xs){
+                visibility: hidden;
+            }
+        }
+        .menuIcon{
+            .menu{
+                visibility: hidden;
+                // @include respond-to(lg){
+                //     visibility:visible;
+                // }
+                @include respond-to(md){
+                    visibility:visible;
+                }
+                @include respond-to(sm){
+                    visibility:visible;
+                }
+                @include respond-to(xs){
+                    visibility:visible;
+                }
+            }
+            
+        }
+        .MuiSvgIcon-root{
+            margin-right: 5px;
+        }
+        
+    }
+    
+
+   
+}

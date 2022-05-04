@@ -1,0 +1,36 @@
+@import "/src/components/dashboard/Responese/minxing.scss";
+.item{
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    cursor: pointer;
+    .left{
+        display: flex;
+    align-items: center; 
+        .avatar_Item{
+            margin-right: 10px;
+        }
+    }
+    .middle{
+        .title_Item{
+            margin-left: 10px;
+            font-weight: 500;
+        }
+    }
+   
+    .icon_Item {
+        font-size: medium;
+        color: #027a12c5;      
+    @include respond-to(lg){
+        margin-left: -10px;
+    }
+    @include respond-to(md){
+        margin-left: 10px;
+    }
+   
+    }  
+}
+.item:hover {
+    background-color: lightgray;
+    border-radius: 10px;
+}
